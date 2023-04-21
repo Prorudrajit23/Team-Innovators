@@ -1,0 +1,131 @@
+/* CSS Reset */
+*{
+    margin: 0px;
+    padding:0px;
+}
+/* navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+#navbar::before{
+  content:"";
+  background-color: black;
+  position: absolute;
+  height:100%;
+  width:100%;
+  top:0px;
+  left:0px;
+  z-index: -1;
+  opacity: 0.4;
+}
+/* Navigation bar: Logo and image */
+#logo{
+  margin:4px 12px;
+}
+#logo img{
+  height: 50px;
+  border-radius:100% ;
+}
+/* Navigation bar: List Items */
+#navbar ul{
+  display: flex;
+  
+}
+
+#navbar ul li{
+  list-style: none;
+  font-size: 1.3rem;
+}
+#navbar ul li a{
+  text-decoration: none;
+  display: block;
+  padding:14px 14px;
+  border-radius: 30px;
+  color: white;
+  font-family: 'Roboto Slab', serif;
+}
+#navbar ul li a:hover{
+  background-color: white;
+  color: black;
+}
+/* home section */
+#home{
+  display: flex;
+  flex-direction: column;
+  padding: 3px 200px;
+  height: 610px;
+  justify-content: center;
+  align-items: center;
+}
+#home::before{
+  content:"";
+  position: absolute;
+  top: 0px;
+  left:0px;
+  background:url('../blue.png.png')no-repeat center center /cover;
+  height:87%;
+  width:100%;
+  z-index: -1;
+  opacity: 0.89;
+}
+#home h1{
+  color: white;  
+  text-align: center;
+  /* font-family: 'Roboto Slab', serif; */
+}
+#home p{
+  color: white;  
+  text-align: center;
+  font-size: 1.3rem;
+  font-family: 'Roboto Slab', serif;
+}
+/* services-section */
+#services{
+  margin: 34px;
+  display: flex;
+  padding: 53px;
+}
+#services .box{
+        border: 2px solid brown; 
+        border-radius: 28px;
+        margin: 44px;   
+        padding: 30px;
+        background-color: rgb(237, 235, 235);
+}
+.center{
+  text-align: center;
+}
+#services .box img
+{
+  height: 160px;
+  margin: auto;
+  display: block;
+}
+/* utility classes */
+.h-primary{
+  font-size: 3.5rem;
+  padding: 12px;
+  text-align: center;
+  font-family: 'Tilt Prism', cursive;
+}
+.h-secondary{
+  font-size: 2.2rem;
+  padding: 12px;
+  text-align: center;
+  font-family: 'Tilt Prism', cursive;
+}
+.btn{
+  padding: 6px 20px ;
+  border: 2px solid white;
+  background-color: brown;
+  color: white;
+  border-radius: 14px;
+  margin:17px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.btn:hover{
+  background-color:rgb(220, 86, 86);
+}

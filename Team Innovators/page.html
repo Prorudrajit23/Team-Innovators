@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>To-do list</title>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Shantell+Sans:wght@300&display=swap"
+		rel="stylesheet">
+	<style>
+		* {
+			font-family: 'Poppins', sans-serif;
+			margin: 0;
+		}
+
+		body {
+            background:url(wall.jpg);
+         }
+
+		#new-task-form {
+            margin: 80px;
+        }
+		#new-task-form:nth-child(2) {
+            padding-left: 10px;
+        }
+		
+		#new-task-form:nth-child(4) {
+            padding-left: 0px;;
+        }
+		#new-task-form:nth-child(5) {
+            padding-left: 20px;
+        }
+		#new-task-form:nth-child(6) {
+            padding-left:0px;
+        }
+		
+
+		header {
+			margin: 4px auto;
+		    border: none ;
+			text-align: center;
+			width: 100%;
+		}
+
+		header h1 {
+			display: flex;
+			color: rgb(240, 4, 40);
+			font: bold;
+			font-size: 40px;
+			/* margin-bottom: 2px; */
+			text-align: left;
+			padding :0px 6px;
+		}
+
+		#new-task-input {
+			display: inline-block;
+			margin: 10px;
+			width: 85vh;
+			padding: 5px;
+			height: 40px;
+		}
+
+		input,
+		button {
+			border: none;
+			appearance: none;
+			background: none;
+			outline: none;
+		}
+
+		#new-task-input::placeholder {
+			display: inline-block;
+			color: rgb(204, 143, 143);
+			background-color: rgb(255, 255, 255);
+			padding: 5px 25px;
+			font-size: large;
+		}
+
+		#new-task-input {
+			flex: 1 1 0%;
+			background-color: white;
+			border:3px solid rgb(222, 160, 160);
+			text-align: center;
+			border-radius: 1rem;
+			margin-right: 1rem;
+			color: var(--light);
+			font-size: 1.25rem;
+			border-radius: 28px;
+		}
+
+		#new-task-submit {
+			color: rgb(200, 45, 102);
+			font-size: 1.25rem;
+			font-weight: 550;
+		}
+
+		#new-task-submit:hover {
+			opacity: 0.8;
+			cursor: pointer;
+		}
+		.task-list {
+			padding: 1rem;
+		}
+
+        img{
+            height: 60px;
+            border-radius: 50%;
+            margin:0px 0px -15px 0px;
+            width: 5.2%;
+        }
+		#logop{
+			display:block;
+			height:60px;
+		    width:auto;
+		}
+		#logop img{
+			display:flex;
+		    margin :0px 0px 0px 93%;
+		}
+
+	</style>
+</head>
+
+<body>
+	<header>
+		<h1>Dashboard</h1>
+		<div id="logop"><img src="profile.png" alt="">
+		</div>
+		<form id="new-task-form">
+            <img src="helpline.png" alt="">
+			<input type="text" id="new-task-input" placeholder="Chat Here" />
+			<input type="submit" id="new-task-submit" value="ADD" />
+		</form>
+		<form id="new-task-form">
+            <img src="alert.png" alt="">
+			<input type="text" id="new-task-input" placeholder="Traffic Alert Details" />
+			<input type="submit" id="new-task-submit" value="ADD " />
+		</form>
+		<form id="new-task-form">
+            <img src="notification.png" alt="">
+			<input type="text" id="new-task-input" placeholder="Notifications" />
+			<input type="submit" id="new-task-submit" value="ADD " />
+		</form>
+		<form id="new-task-form">
+            <img src="announcement.png" alt="">
+			<input type="text" id="new-task-input" placeholder="Announcements" />
+			<input type="submit" id="new-task-submit" value="ADD" />
+		</form>
+	</header>
+	
+</body>
+
+</html>
